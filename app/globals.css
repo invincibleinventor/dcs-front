@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.font-pacifico{
+font-family: "Pacifico", cursive;
+font-weight: 400;
+font-style: normal;
+}
+.two-line-ellipsis {
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    line-clamp:2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* styles.css */
+* {
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+    background: transparent; /* Background of the scrollbar track */
+}
+
+::-webkit-scrollbar-track {
+    background: transparent; /* Keep it transparent */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4); /* Color of the thumb */
+    border-radius: 10px; /* Rounded corners */
+    height: 30px; /* Set a fixed height for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.6); /* Darker on hover */
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 0, 0, 0.4) transparent; /* Thumb color */
+}
