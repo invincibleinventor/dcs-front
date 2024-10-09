@@ -9,7 +9,7 @@ export default function Footer(){
     return(<div>
           <div className="flex flex-col w-screen">
           <div className='px-16    py-7  lg:px-40 lg:py-7 flex flex-col'>
-          <div className="flex flex-row items-center content-center justify-between">
+          <div className="flex flex-row py-8 items-center content-center justify-between">
     <h1 className="text-lg md:text-2xl font-bold pr-10 text-black">Happy Customers Say</h1>
     <div className="flex flex-row space-x-3">
       <div className="size-8 flex items-center content-center text-neutral-500 bg-neutral-200 rounded-full ">
@@ -20,7 +20,7 @@ export default function Footer(){
 </div>    </div>
 </div>
 
-<div className='grid grid-cols-1 lg:grid-cols-2 mt-7 gap-4'>
+<div className='grid mb-7 grid-cols-1 lg:grid-cols-2 mt-7 gap-4'>
   
 <Testimonial image="\best_company\best_company01.svg" name="Lyod Gomez" description=" Lorem ipsum is the standard dummy text of the typing industry
         Lorem ipsum is the standard dummy text of the typing industry
