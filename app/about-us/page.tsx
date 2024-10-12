@@ -1,7 +1,7 @@
 export default function Page(){
     return(
         <div className="flex flex-col">
-<section className="relative h-screen bg-cover bg-center flex items-center justify-center" >
+<section className="relative h-screen bg-cover bg-center flex -z-10 items-center justify-center" >
   <div className="absolute -z-10 inset-0 bg-[url(/About_bg.svg)]"></div> {/* Dark overlay */}
   <div className="relative mt-20 text-center text-white max-w-3xl mx-auto">
   <h1 className="font-pacifico mx-auto text-white text-center font-bold text-3xl px-10 md:text-5xl">Our team cares about your full relax</h1>

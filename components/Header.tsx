@@ -9,7 +9,7 @@ export default function Header(){
     const loc = usePathname()
     const [opened,setOpened] =useState(false)
     return(
-        <div className="absolute top-0 left-0 flex items-center content-center right-0 w-full h-28 bg-opacity-20 bg-white lg:px-40" >
+        <div className="absolute top-0 left-0 z-100 flex items-center content-center right-0 w-full h-28 bg-opacity-20 bg-white lg:px-40" >
             <div className="flex relative w-full flex-row h-28 justify-between items-center ">
                 <div className="hidden lg:block">
                 <Image src="/logo.svg" width={80} height={80} alt ="Logo"></Image>            
