@@ -261,7 +261,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col space-y-4">
       <h1 className="text-base font-medium text-black">Service Types</h1>
-      <select placeholder="Select the service type" className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black">
+      <select className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black">
           <option value="" disabled selected>Select the service type</option>
       </select>
       </div>
