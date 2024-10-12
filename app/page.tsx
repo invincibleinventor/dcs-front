@@ -1,5 +1,6 @@
 import Card from "@/components/Card";
 import Package from "@/components/Package";
+import Popular from "@/components/Popular";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 export default function Home() {
@@ -181,7 +182,7 @@ export default function Home() {
         </div>
       </section>
 <section className="lg:px-40 px-16 overflow-hidden py-0 pb-32 flex flex-col lg:flex-row items-center mt-24 space-y-10 lg:space-y-0 lg:space-x-8">
-  
+
   <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
     <img
       src="\best_company\best_company01.svg"
@@ -198,7 +199,7 @@ export default function Home() {
     <p className="text-neutral-600 leading-relaxed mb-6">
       After decades of experience, and a whole life in Lucca, we offer you the most complete tourism service in the city. In addition to having bikes and rickshaws to have as much fun as you want, you have the choice of tour guides with whom to tour and drivers for your every need! We offer packages in the way that you get the most at the lowest price. Book with us and we will always be available for you!
     </p>
-    
+
     <div className="grid grid-cols-2 gap-8 lg:gap-12">
       <div className="flex flex-col items-center">
         <span className="text-4xl font-bold text-orange-500">20+</span>
@@ -251,20 +252,22 @@ export default function Home() {
       <input placeholder="Enter your name and surname" className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black"></input>
       </div>
       <div className="flex flex-col space-y-4">
-      <h1 className="text-base font-medium text-black">Name and surname</h1>
-      <input placeholder="Enter your name and surname" className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black"></input>
+      <h1 className="text-base font-medium text-black">Email Address</h1>
+      <input type="email" placeholder="Enter your email address" className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black"></input>
       </div>
       <div className="flex flex-col space-y-4">
-      <h1 className="text-base font-medium text-black">Name and surname</h1>
-      <input placeholder="Enter your name and surname" className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black"></input>
+      <h1 className="text-base font-medium text-black">Telephone Number</h1>
+      <input type="number" placeholder="Enter your name and surname" className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black"></input>
       </div>
       <div className="flex flex-col space-y-4">
-      <h1 className="text-base font-medium text-black">Name and surname</h1>
-      <input placeholder="Enter your name and surname" className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black"></input>
+      <h1 className="text-base font-medium text-black">Service Types</h1>
+      <select placeholder="Select the service type" className="w-full px-6 py-3 rounded-lg bg-white placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 text-black">
+          <option value="" disabled selected>Select the service type</option>
+      </select>
       </div>
       <div className="flex flex-col space-y-4">
-      <h1 className="text-base font-medium text-black">Name and surname</h1>
-      <input placeholder="Enter your name and surname" className="w-full px-6 py-3 rounded-lg placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 bg-white  text-black"></input>
+      <h1 className="text-base font-medium text-black">Date</h1>
+      <input type="date" placeholder="Select the date" className="w-full px-6 py-3 rounded-lg placeholder:text-sm placeholder:font-normal placeholder:text-neutral-600 bg-white  text-black"></input>
       </div>
       <div className="flex flex-col space-y-4">
       <h1 className="text-base font-medium text-black">Time</h1>
@@ -280,6 +283,23 @@ export default function Home() {
       alt="Tourist with phone and map"
       className="w-72 h-auto lg:w-[calc(100%/2.4)] hidden lg:block absolute right-20  -bottom-8 object-contain"
     />
+</section>
+<h1 className="py-20 pb-10 font-black text-3xl lg:px-40 px-10">The Most Popular Packages</h1>
+<section className="px-10 gap-10 lg:px-40 grid grid-cols-1 pt-0 pb-20 md:grid-cols-2 lg:grid-cols-4">
+
+<Popular image="/popular_package/pop_package01.svg" price="10" title="BIKE / RICKSHAW" one="Your bike for a day" two="City App" three="Discount on Rickshaw"></Popular>
+
+
+<Popular image="/popular_package/pop_package02.svg" price="10" title="BIKE TOURS" one="Your bike for a day" two="City App" three="Discount on Rickshaw"></Popular>
+
+
+
+<Popular image="/popular_package/pop_package03.svg" price="10" title="BUS TRIPS" one="Your bike for a day" two="City App" three="Discount on Rickshaw"></Popular>
+
+
+
+<Popular image="/popular_package/pop_package04.svg" price="10" title="TRANSFER" one="Your bike for a day" two="City App" three="Discount on Rickshaw"></Popular>
+
 </section>
     </div>
   );
