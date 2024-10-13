@@ -284,8 +284,8 @@ export default function Home() {
       className="w-72 h-auto lg:w-[calc(100%/2.4)] hidden lg:block absolute right-20  -bottom-8 object-contain"
     />
 </section>
-<h1 className="py-20 pb-10 font-black text-3xl lg:px-40 px-10">The Most Popular Packages</h1>
-<section className="px-10 gap-10 lg:px-40 grid grid-cols-1 pt-0 pb-20 md:grid-cols-2 lg:grid-cols-4">
+<h1 className="py-20 pb-10 font-bold text-2xl lg:px-40 px-10">The Most Popular Packages</h1>
+<section className="px-10 gap-10 lg:px-40 grid grid-cols-1 pt-0 pb-20 md:grid-cols-2 items-center content-center lg:grid-cols-4">
 
 <Popular image="/popular_package/pop_package01.svg" price="10" title="BIKE / RICKSHAW" one="Your bike for a day" two="City App" three="Discount on Rickshaw"></Popular>
 

@@ -2,7 +2,7 @@ import {Icon} from "@iconify/react"
 export default function Popular(props:any){
     return(
 
-        <div className="max-w-xs bg-white rounded-lg shadow-md overflow-hidden">
+        <div className="max-w-xs min-w-72 lg:min-w-0 mx-auto md:mx-0 bg-white rounded-lg shadow-md overflow-hidden">
         <img
         className="w-full h-48 object-cover"
         src={props.image}
